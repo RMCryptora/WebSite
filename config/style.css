@@ -1,0 +1,471 @@
+/* ==============================
+   ESTILOS GENERALES
+============================== */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background-color: #111;
+    color: #f5f5f5;
+    text-align: justify;
+}
+
+/* ==============================
+   CABECERA
+============================== */
+header {
+    background-color: #000;
+    padding: 20px;
+    text-align: left;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+header h1 {
+    color: gold;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.slogan {
+    margin-top: 5px;
+    color: #ccc;
+    font-style: italic;
+}
+
+/* ==============================
+   MENÚ
+============================== */
+nav {
+    background: #1a1a1a;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: gold;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: white;
+}
+
+/* ==============================
+   SECCIONES
+============================== */
+section {
+    padding: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    color: gold;
+    margin-bottom: 15px;
+}
+
+/* ==============================
+   SERVICIOS
+============================== */
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.servicio {
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.servicio:hover {
+    transform: translateY(-5px);
+}
+
+.servicio h3 {
+    color: gold;
+}
+
+.servicio img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.servicio p {
+    color: #ddd;
+    font-size: 0.95rem;
+    text-align: justify;
+}
+
+/* ==============================
+   DETALLES DE PRECIO
+============================== */
+.precio-detalle {
+    text-align: left;
+    margin-top: 10px;
+    background: #222;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: #eee;
+    line-height: 1.4;
+}
+
+.precio-detalle ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+/* ==============================
+   NOTA DE PRECIOS
+============================== */
+.nota-precio {
+    font-size: 0.85rem;
+    color: #999;
+    font-style: italic;
+    margin-top: 5px;
+    text-align: justify;
+}
+
+/* ==============================
+   CONTACTO
+============================== */
+a {
+    color: gold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ==============================
+   PIE DE PÁGINA
+============================== */
+footer {
+    background: #000;
+    color: #aaa;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+/* ==============================
+   POLÍTICA DE PRIVACIDAD
+============================== */
+#privacidad {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+    text-align: justify;
+}
+
+#privacidad h1,
+#privacidad h2,
+#privacidad h3 {
+    color: gold;
+    margin-bottom: 15px;
+}
+
+#privacidad p,
+#privacidad li {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+#privacidad ul {
+    list-style-type: disc;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    color: #ddd;
+}
+
+/* ==============================
+   RESEÑAS
+============================== */
+.reseñas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.reseña {
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.reseña:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+.reseña .usuario {
+    font-weight: bold;
+    color: gold;
+    margin-bottom: 8px;
+}
+
+/* ==============================
+   FORMULARIO DE RESEÑAS
+============================== */
+.form-reseña {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+}
+
+.form-reseña h3 {
+    color: gold;
+    margin-bottom: 15px;
+}
+
+.form-reseña label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+.form-reseña input,
+.form-reseña textarea,
+.form-reseña select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: #fff;
+    font-size: 0.95rem;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.form-reseña input:focus,
+.form-reseña textarea:focus,
+.form-reseña select:focus {
+    background: #333;
+}
+
+.form-reseña button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: gold;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-reseña button:hover {
+    background: #d4af37;
+}
+
+/* ==============================
+   FAQ
+============================== */
+#faq {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.1);
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.faq-question {
+    background: none;
+    border: none;
+    color: gold;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 0;
+    width: 100%;
+    text-align: left;
+}
+
+.faq-question:hover {
+    color: white;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    padding-left: 10px;
+    color: #ddd;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+    opacity: 1;
+}
+
+/* ==============================
+   EQUIPO
+============================== */
+#equipo {
+    padding: 40px 20px;
+    background-color: #111;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.miembro {
+    text-align: center;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.miembro img {
+    width: 100%;
+    border-radius: 50%;
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.miembro h3 {
+    color: gold;
+    margin: 10px 0 5px;
+}
+
+.miembro p {
+    color: #ccc;
+    font-size: 0.95rem;
+}
+
+/* ==============================
+   CERTIFICADOS / SELLOS
+============================== */
+.certificados-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.certificados-grid img {
+    max-width: 100px;
+    height: auto;
+    filter: brightness(1.1);
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.certificados-grid img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.3);
+}
+
+/* ==============================
+   PANTALLA DE CARGA
+============================== */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid gold;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ==============================
+   PANTALLA DE MANTENIMIENTO
+============================== */
+#maintenance-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    color: gold;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 99999;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#maintenance-screen h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#maintenance-screen p {
+    font-size: 1.5rem;
+}
